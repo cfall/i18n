@@ -1,0 +1,11 @@
+version: '3'
+services:
+  weblate:
+    ports:
+      - 80:8080
+    environment:
+      WEBLATE_EMAIL_HOST: smtp.example.com
+      WEBLATE_EMAIL_HOST_USER: user
+      WEBLATE_EMAIL_HOST_PASSWORD: pass
+      WEBLATE_ALLOWED_HOSTS: your hosts
+      WEBLATE_ADMIN_PASSWORD: password for admin user
